@@ -1,0 +1,4 @@
+heroku config:set NPM_CONFIG_PRODUCTION=false
+heroku config:set NPM_CONFIG_FORCE=true
+heroku config:set NPM_CONFIG_LEGACY_PEER_DEPS=true
+heroku config:set NPM_CONFIG_CI=false
