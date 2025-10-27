@@ -17,7 +17,9 @@ export default function Home() {
 					priority
 				/>
 				<div className={styles.intro}>
-					<h1>Wesh pelo! To get started, edit the page.js file.</h1>
+					<h1 className={`${russoOne.className} text-4xl font-bold`}>
+						Wesh pelo! To get started, edit the page.js file.
+					</h1>
 					<FuzzyText>BADWORK</FuzzyText>
 					<p>
 						Looking for a starting point or more instructions? Head
