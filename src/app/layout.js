@@ -20,7 +20,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en' className='bodyBg'>
-			<body className={`${russoOne.className} bodyBg`}>{children}</body>
+			<body
+				className={`${geistSans.className} ${russoOne.className} bodyBg`}>
+				{children}
+			</body>
 		</html>
 	);
 }
