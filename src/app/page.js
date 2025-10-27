@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import styles from "./page.module.css";
-// import FuzzyText from "@/components/FuzzyText";
+import FuzzyText from "@/components/FuzzyText";
 
 export default function Home() {
 	return (
@@ -18,7 +18,7 @@ export default function Home() {
 				/>
 				<div className={styles.intro}>
 					<h1>Wesh pelo! To get started, edit the page.js file.</h1>
-					{/* <FuzzyText>BADWORK</FuzzyText> */}
+					<FuzzyText>BADWORK</FuzzyText>
 					<p>
 						Looking for a starting point or more instructions? Head
 						over to{" "}
