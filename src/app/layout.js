@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono, Russo_One } from "next/font/google";
+import { russoOne } from "./fonts";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -9,11 +10,6 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
 	variable: "--font-geist-mono",
 	subsets: ["latin"],
-});
-
-const russoOne = Russo_One({
-	subsets: ["latin"],
-	weight: "400",
 });
 
 export const metadata = {
