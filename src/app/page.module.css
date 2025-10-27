@@ -25,9 +25,9 @@
   display: flex;
   min-height: 100vh;
   width: 100%;
-  max-width: 800px;
+  /* max-width: 800px; */
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   /* background-color: var(--foreground); */
   padding: 120px 60px;
@@ -36,27 +36,27 @@
 .intro {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
+  align-items: center;
+  text-align: center;
   gap: 24px;
 }
 
 .intro h1 {
-  max-width: 320px;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -2.4px;
-  text-wrap: balance;
+  /* max-width: 320px; */
+  /* font-size: 40px; */
+  /* font-weight: 600; */
+  /* line-height: 48px; */
+  /* letter-spacing: -2.4px; */
+  /* text-wrap: balance; */
   color: var(--text-primary);
 }
 
 .intro p {
-  max-width: 440px;
+  /* max-width: 440px; */
   font-size: 18px;
-  line-height: 32px;
-  text-wrap: balance;
-  color: var(--text-secondary);
+  /* line-height: 32px; */
+  /* text-wrap: balance; */
+  color: white;
 }
 
 .intro a {
@@ -67,6 +67,7 @@
 .ctas {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   width: 100%;
   max-width: 440px;
   gap: 16px;
@@ -91,6 +92,7 @@ a.primary {
   background: var(--text-primary);
   color: var(--background);
   gap: 8px;
+  padding: 8px 25px;
 }
 
 a.secondary {
