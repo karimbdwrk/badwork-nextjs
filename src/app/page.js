@@ -12,9 +12,10 @@ export default function Home() {
 		<>
 			<div
 				style={{
-					width: "100%",
-					height: "800px",
-					position: "relative",
+					width: "100vw",
+					height: "100vh",
+					position: "fixed",
+					zIndex: -1,
 				}}>
 				<Dither
 					waveColor={[0.5, 0.5, 0.5]}
