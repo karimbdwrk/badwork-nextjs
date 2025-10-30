@@ -21,28 +21,39 @@ import { russoOne } from "./fonts";
 export default function Home() {
 	// const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
+	const scrollToSection = (id) => {
+		const element = document.getElementById(id);
+		if (element) {
+			// Utilise la méthode native `scrollIntoView`
+			element.scrollIntoView({
+				behavior: "smooth", // 👈 Rend l'animation lisse
+				block: "start", // Défile jusqu'au début de l'élément cible
+			});
+		}
+	};
+
 	return (
 		<>
-			<div
-				style={{
-					width: "100vw",
-					height: "100vh",
-					position: "fixed",
-					zIndex: -1,
-				}}>
-				<Dither
-					waveColor={[0.5, 0.5, 0.5]}
-					disableAnimation={false}
-					enableMouseInteraction={true}
-					mouseRadius={0.3}
-					colorNum={4}
-					waveAmplitude={0.3}
-					waveFrequency={3}
-					waveSpeed={0.05}
-				/>
-			</div>
 			<div className={styles.page}>
 				<main className={styles.main}>
+					<div
+						style={{
+							width: "100vw",
+							height: "100vh",
+							position: "absolute",
+							zIndex: -1,
+						}}>
+						<Dither
+							waveColor={[0.5, 0.5, 0.5]}
+							disableAnimation={false}
+							enableMouseInteraction={true}
+							mouseRadius={0.3}
+							colorNum={4}
+							waveAmplitude={0.3}
+							waveFrequency={3}
+							waveSpeed={0.05}
+						/>
+					</div>
 					{/* <Image
 						className={styles.logo}
 						src='/next.svg'
@@ -56,6 +67,10 @@ export default function Home() {
 							className={`${russoOne.className} text-9xl font-bold hero-title`}>
 							BADWORK
 						</h1>
+						<p>
+							Design and creation converge to shape human-centered
+							experiences.
+						</p>
 						{/* <FuzzyText
 							fontFamily='Russo One'
 							fontSize={48}
@@ -63,15 +78,12 @@ export default function Home() {
 							color='#0070f3'>
 							BADWORK
 						</FuzzyText> */}
-						<p>
-							Design and creation converge to shape human-centered
-							experiences.
-						</p>
 					</div>
 					<div className={styles.ctas}>
 						<a
 							// onPress={onOpen}
 							className={styles.primary}
+							onClick={() => scrollToSection("contact")}
 							// href='https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
 							// target='_blank'
 							// rel='noopener noreferrer'
@@ -152,6 +164,9 @@ export default function Home() {
 						</a> */}
 					</div>
 				</main>
+				<div className={styles.contact} id='contact'>
+					<h2>Contact Section</h2>
+				</div>
 			</div>
 		</>
 	);
