@@ -1,7 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
+/* @custom-variant dark (&:is(.dark *)); */
 
 html,
 body {
@@ -14,7 +18,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
+/* * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -145,4 +149,4 @@ a {
   body {
     @apply bg-background text-foreground;
   }
-}
+} */
