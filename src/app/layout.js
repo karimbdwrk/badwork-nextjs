@@ -1,4 +1,8 @@
+import * as React from "react";
+
 import { Geist, Geist_Mono, Russo_One } from "next/font/google";
+
+import { Providers } from "./providers";
 import { russoOne } from "./fonts";
 import "./globals.css";
 
@@ -22,7 +26,7 @@ export default function RootLayout({ children }) {
 		<html lang='en' className='bodyBg'>
 			<body
 				className={`${geistSans.className} ${russoOne.className} bodyBg`}>
-				{children}
+				<Providers>{children}</Providers>
 			</body>
 		</html>
 	);
