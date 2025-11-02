@@ -104,8 +104,8 @@ a.secondary {
 
 .contact {
   min-height: 100vh;
-  min-width: 100vw;;
-  background-color: #000
+  min-width: 100vw;
+  background-color: white;
 }
 
 /* Enable hover only on non-touch devices */
