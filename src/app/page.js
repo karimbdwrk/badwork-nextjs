@@ -67,17 +67,15 @@ const Home = () => {
 							<Input
 								isRequired
 								className='max-w-xs'
-								defaultValue='junior@heroui.com'
 								label='Email'
 								type='email'
 								placeholder='Enter your email'
 							/>
 							<Textarea
-								isRequired
 								className='max-w-xs'
-								label='Description'
-								labelPlacement='outside'
+								// label='Description'
 								placeholder='Enter your description'
+								labelPlacement='inside'
 							/>
 							<Button color='primary'>Send</Button>
 						</div>
