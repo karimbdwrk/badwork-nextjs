@@ -73,7 +73,7 @@ const Home = () => {
 							/>
 							<Textarea
 								className='max-w-xs'
-								// label='Description'
+								label='Description'
 								placeholder='Enter your description'
 								labelPlacement='inside'
 							/>
